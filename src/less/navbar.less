@@ -1,0 +1,52 @@
+.navWrapper {
+    position: fixed;
+    width: 100%;
+    margin-left: -8px;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 1; 
+}
+
+.navWrapper .navBar {
+    background-color: #0B0C10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh; 
+}
+      
+.navWrapper .navBar .logo {
+    color: gold; 
+}
+     
+.navWrapper .navBar .navLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25vw; 
+}
+
+.navWrapper .navBar .navLinks a {
+    color: gold;
+    text-decoration: none; 
+
+    &:hover {
+        color: darkgoldenrod;
+        cursor: pointer;
+    }
+}
+        
+@media screen and (max-width: 800px) {
+    
+    .navWrapper .navBar .navLinks {
+        width: 50vw; 
+    } 
+}
+        
+@media screen and (max-width: 500px) {
+          
+    .navWrapper .navWrapper .navLinks {
+        width: 75vw; } 
+}
+        
+  
